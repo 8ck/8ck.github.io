@@ -1,0 +1,69 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}  
+
+body {
+  background: #0f2027e9;
+  background: -webkit-linear-gradient(to right, #050505, #101010, #101010ec);
+  background: linear-gradient(to right, #050505, #101010, #101010ec);
+}
+
+.image:hover {
+  text-align: center;
+  transform: rotate(0deg);
+  height: 350px;
+  width: 350px;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; width: 100px; height: 100px;}
+  100% {opacity:1; width: 200px; height: 200px;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0; width: 100px; height: 100px;}
+  100% {opacity:1; width: 200px; height: 200px;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0; width: 100px; height: 100px;}
+  100% {opacity:1; width: 200px; height: 200px;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0; width: 100px; height: 100px;}
+  100% {opacity:1; width: 200px; height: 200px;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0; width: 100px; height: 100px;}
+  100% {opacity:1; width: 200px; height: 200px;}
+}
+
+.image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+.pfp {
+  position: absolute;
+  text-align: center;
+  transition-timing-function: ease-in-out;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+img {
+  transform: rotate(0deg);
+  transition-delay: 0ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1000ms;
+  transform: rotate(360deg);
+  box-shadow: rgba(255, 255, 255, 0.015) 0px 5px 15px;
+}
